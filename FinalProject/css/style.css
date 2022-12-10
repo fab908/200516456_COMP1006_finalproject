@@ -1,0 +1,525 @@
+/* buttons */
+input{
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: #1c89ff;
+    border: solid 1px transparent;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+a{
+    text-decoration: none;
+}
+/************* Header *************/
+body > header{
+    /* making header a flex item, setting the size, creating a background color, and aligning everything inside to the centre*/
+    display: flex;
+    width: auto;
+    height: 200px;
+    background-color: #F4F4F4;
+    align-items: center;
+    padding-left: 100px;
+}
+body > header > nav{
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+}
+/* setting the size of the logo */
+body > header > div > a > img{
+    height: 130px;
+    width: auto;
+}
+/* nav list for the header */
+body > header > nav > ul{
+    display: flex;
+}
+/* spacing the actual navigation links and taking away the styling*/
+body > header > nav > ul > li{
+    padding: 53px;
+    list-style: none;
+    padding-bottom: 0;
+    padding-top: 20px;
+}
+body > header > nav > ul > li > a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+/****************** FOOTER *******************************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1170px;
+    margin:auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    margin-top: 50px;
+    background-color: whitesmoke;
+    padding: 70px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #1c89ff;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+    color: black;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: black;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+    }
+}
+
+
+
+
+/************* The login and register page *************/
+body{
+    margin: 0px;
+}
+.login > main,
+.register > main{
+    margin:0px;
+    background-color: whitesmoke;
+    /*background-image: url("../img/hp-background.png");*/
+    background-size: cover;
+    padding: 200px;
+    padding-top:150px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
+.login > main > section,
+.register > main > section{
+    background-color: white;
+    width: 800px;
+    height:600px;
+    margin: 0px;
+    border-radius: 45px;
+    display: flex;
+}
+.login > main > section > div,
+.register > main > section > div{
+    width:400px;
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.login > main > section > div:nth-child(1),
+.register > main > section > div:nth-child(1){
+    border-radius: 44px 3px 3px 44px;
+    background-image: url("../img/hp-printer.png");
+    background-position: right;
+
+}
+.login > main > section > div:nth-child(2) > img,
+.register > main > section > div:nth-child(2) > a > img{
+    height: 100px;
+    width: auto;
+    margin-bottom: 30px;
+}
+.login > main > section > div:nth-child(2) > form,
+.register > main > section > div:nth-child(2) > form{
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+}
+.login > main > section > div:nth-child(2) > form > p,
+.register > main > section > div:nth-child(2) > form > p{
+    margin-top: 0px;
+}
+.login > main > section > div:nth-child(2) > form > p > input,
+.register > main > section > div:nth-child(2) > form > p > input{
+    padding: 5px;
+    width: 250px;
+    background-color: white;
+    border: solid;
+    color: black;
+    border-width: 1px;
+    border-radius: 5px;
+}
+.register > main > section > div:nth-child(2) > a{
+    margin-top: 10px;
+}
+/************ Content Page ************/
+.content{
+    display: flex;
+}
+.content > section:nth-child(2){
+    width: 700px;
+    height: 1000px;
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.content > section:nth-child(1){
+    width: 100%;
+}
+.content > section:nth-child(2) > img{
+    width: 170px;
+    height: 170px;
+}
+.content > section:nth-child(2) > div > p{
+    font-size: 28px;
+    margin: 0px;
+}
+.content > section:nth-child(2) > p{
+    font-size: 22px;
+}
+.content > section:nth-child(2) > form{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.content > section:nth-child(2) > form > input{
+    margin-top: 10px;
+}
+.content > section:nth-child(2) > form > input:nth-child(1){
+    width: 120px;
+}
+.content > section:nth-child(1) > form{
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+}
+.content > section:nth-child(1) > form > input,
+.content > section:nth-child(1) > form > p > input{
+    padding: 5px;
+    margin-top: 10px;
+    width: 250px;
+    background-color: white;
+    border: solid;
+    color: black;
+    border-width: 1px;
+    border-radius: 5px;
+}
+/*
+    The visual of the posts
+ */
+.post{
+    display:flex;
+    justify-content: center;
+    margin-top:100px;
+}
+.post > div{
+    width:500px;
+    background-color: #F4F4F4;
+}
+/* The top part of the post with the profile picture, email,
+    and an x to remove the post
+ */
+.post > div > div:nth-child(1){
+    display: flex;
+    align-items: center;
+    width:100%;
+    justify-content: space-between;
+}
+.post > div > div:nth-child(1) > img{
+    margin: 10px;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+}
+.post > div > div:nth-child(1) > p{
+    font-size: 25px;
+}
+.post > div > div:nth-child(1) > div{
+    display: flex;
+    justify-content: right;
+}
+.post > div > div:nth-child(1) > div > form > input{
+    width:50px;
+    margin-right: 20px;
+}
+/*
+    the main image
+ */
+.post > div > div:nth-child(2){
+    margin: 10px;
+    margin-top: 0px;
+}
+.post > div > div:nth-child(2) > p{
+    text-wrap: normal;
+}
+.post > div > div:nth-child(2) > img{
+    width: 480px;
+    height: auto;
+}
+.post > div > div:nth-child(2) > img:before{
+    background-image: url("../img/empty-profile.jpeg");
+}
+/*
+    comment section
+ */
+.post > div > div:nth-child(3){
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+}
+.post > div > div:nth-child(3) > h1{
+    margin: 10px;
+}
+.post > div > div:nth-child(3) > form{
+    display: flex;
+}
+.post > div > div:nth-child(3) > form > input:nth-child(1) {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    margin-right: 5px;
+    width: 300px;
+}
+.post > div > div:nth-child(3) > form > input:nth-child(2){
+    width: 75px;
+}
+.post > div > div:nth-child(3) > table{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.post > div > div:nth-child(3) > table > tbody > tr > td{
+    display:flex;
+    flex-flow: column;
+    margin-top: 10px;
+    justify-content: left;
+}
+/*
+    profile page
+ */
+.profile{
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.profile > img{
+    width: 350px;
+    height: 350px;
+}
+.profile > div > p{
+    font-size: 28px;
+    margin: 0px;
+}
+.profile > p{
+    font-size: 22px;
+}
+
+
+
+
+
+.editProfile > form{
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+}
+.editProfile > form > div > input,
+.editProfile > form > input,
+.editProfile > form > p > input{
+    padding: 5px;
+    width: 250px;
+    background-color: white;
+    border: solid;
+    color: black;
+    border-width: 1px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.editProfile > form > p > input {padding-top: 15px;}
+
+/*
+    users page
+ */
+
+table.boostrap4_table_head_dark_striped {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+
+table.boostrap4_table_head_dark_striped thead th {
+    font-size: 1rem;
+    line-height: 1.5;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    text-align: inherit;
+    padding: .75rem;
+    border-top: 1px solid #dee2e6;
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    color: #fff;
+    background-color: #212529;
+    border-color: #32383e;
+}
+
+table.boostrap4_table_head_dark_striped td {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+table.boostrap4_table_head_dark_striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+
+
+
+/* ----------- Non table related styles */
+
+.table_container {
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    font-family: sans-serif;
+}
+/*
+    edit page
+ */
+.edit{
+    margin:0px;
+    background-color: white;
+    /*background-image: url("../img/hp-background.png");*/
+    background-size: cover;
+    padding: 200px;
+    padding-top:50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
+.edit > section{
+    background-color: whitesmoke;
+    width: 800px;
+    height:600px;
+    margin: 0px;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.edit > section > div{
+    width:400px;
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.edit > section > div > form{
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+}
+.edit > section > div > form > p{
+    margin-top: 0px;
+}
+.edit > section > div > form > p > input{
+    padding: 5px;
+    width: 250px;
+    background-color: white;
+    border: solid;
+    color: black;
+    border-width: 1px;
+    border-radius: 5px;
+}
+.edit > section > div > a{
+    margin-top: 10px;
+}
